@@ -186,7 +186,6 @@
             <RvdsVP>2</RvdsVP>
             <RvdsMve>0</RvdsMve>
             <RvdsCdeCp>0</RvdsCdeCp>
-            <nBranchProt>0</nBranchProt>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -408,6 +407,46 @@
               <FileName>ST7735.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\inc\ST7735.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>LCD.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\LCD.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LCD.h</FilePath>
+            </File>
+            <File>
+              <FileName>Switch_buttons.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Switch_buttons.c</FilePath>
+            </File>
+            <File>
+              <FileName>Switch_buttons.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Switch_buttons.h</FilePath>
+            </File>
+            <File>
+              <FileName>Speaker.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Speaker.c</FilePath>
+            </File>
+            <File>
+              <FileName>Speaker.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Speaker.h</FilePath>
             </File>
           </Files>
         </Group>

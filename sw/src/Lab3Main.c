@@ -37,16 +37,32 @@
 #include "../inc/PLL.h"
 #include "../inc/tm4c123gh6pm.h"
 #include "../inc/Timer0A.h"
+#include "../inc/tm4c123gh6pm.h"
+#include "../inc/ADCSWTrigger.h"
+#include "../inc/LaunchPad.h"
+#include "../inc/Timer2A.h"
+#include "../inc/CortexM.h"
+#include "../inc/UART.h"
+#include "../inc/SSD1306.h"
+
 #include "Lab3.h"
+#include "Timer.h"
+#include "LCD.h"
+#include "Switch_buttons.h"
+#include "Speaker.h"
+
 // ---------- Prototypes   -------------------------
 void DisableInterrupts(void); // Disable interrupts
 void EnableInterrupts(void);  // Enable interrupts
 void WaitForInterrupt(void);  // low power mode
 int main(void){
-  DisableInterrupts();
-  PLL_Init(Bus80MHz);    // bus clock at 80 MHz
-  // write this
+  DisableInterrupts(); 
+  PLL_Init(Bus80MHz);                // 80 MHz
+  LaunchPad_Init();
+  UART_Init();  // to print the PMF
+  Timer2A_Init(&Timer_Function,80000000,1); // 1Hz, priority=1
   EnableInterrupts();
+	
   while(1){
       // write this
   }
